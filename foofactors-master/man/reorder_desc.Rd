@@ -4,13 +4,17 @@
 \alias{reorder_desc}
 \title{Reorder levels of a factors in descending order}
 \usage{
-reorder_desc(x, y)
+reorder_desc(x, y, FUN = mean, ...)
 }
 \arguments{
 \item{x}{a factor (or character vector)}
 
 \item{y}{a vector of the same length as x, based on which levels of x will be ordered.
 If y is a character vector, it will be sorted in reverse alphabetic order and x ordered accordingly.}
+
+\item{FUN}{a function to be applied to each subset of y, determined by the levels of x. Default is mean.}
+
+\item{...}{extra arguments supplied to FUN, optional}
 }
 \description{
 Descending version of the `reorder` function. Reorders levels of a factor based on descending order of values of a second variable.
@@ -19,5 +23,7 @@ Descending version of the `reorder` function. Reorders levels of a factor based 
 x <- c("a", "d", "h", "g", "m")
 y <- c(1, 3, 9, 7, 6)
 reorder_desc(x, y)
+
+reorder_desc(iris$Species, iris$Sepal.Width, median)
 
 }
