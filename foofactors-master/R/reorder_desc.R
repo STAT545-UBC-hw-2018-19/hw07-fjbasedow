@@ -1,0 +1,19 @@
+#' Reorder levels of a factors in descending order
+#'
+#' Descending version of the `reorder` function. Reorders levels of a factor based on descending order of values of a second variable.
+#'
+#' @param x a factor (or character vector)
+#' @param y a vector of the same length as x, based on which levels of x will be ordered.
+#' If y is a character vector, it will be sorted in reverse alphabetic order and x ordered accordingly.
+#'
+#' @examples
+#' x <- c("a", "d", "h", "g", "m")
+#' y <- c(1, 3, 9, 7, 6)
+#' reorder_desc(x, y)
+#'
+#' @export
+
+reorder_desc <- function(x, y){
+  reversed <- reorder(x, dplyr::desc(y))
+  return(reversed)
+}
