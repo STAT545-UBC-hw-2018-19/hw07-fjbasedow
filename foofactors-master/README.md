@@ -5,6 +5,10 @@
 
 Factors are a very useful type of variable in R, but they can also drive you nuts. This package provides some helper functions for the care and feeding of factors.
 
+### Vignette
+
+The vignette of this package can be found [here](http://127.0.0.1:27071/session/Rvig.5f4d43c63d0c.html).
+
 ### Installation
 
 ``` r
