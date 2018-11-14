@@ -48,3 +48,26 @@ The `freq_out()` function returns a frequency table as a well-named `tbl_df`:
 freq_out(x)
 ```
 
+Sometimes we want to change the order of levels of a factor, for example when we want to plot data in the order of increasing or descreasing values. Let's have a look at the median of `Sepal.Width` for each `Species` in the `iris` data:
+
+```{r}
+library(tidyverse)
+ggplot(iris, aes(Species, Sepal.Width)) + geom_boxplot()
+```
+
+We can change the order of levels with the `reorder` function from the `stats` package, which orders levels of a factor based on the values in another variable.
+
+```{r}
+Species_reordered <- reorder(iris$Species, iris$Sepal.Width, median)
+ggplot(iris, aes(Species_reordered, Sepal.Width)) + geom_boxplot()
+```
+
+However, `reorder` always orders in ascending order. What if we want it ordered descendingly? The new `foofactors` function `reorder_desc` can help us with that:
+
+
+```{r}
+Species_reordered_desc <- reorder_desc(iris$Species, iris$Sepal.Width, median)
+ggplot(iris, aes(Species_reordered_desc, Sepal.Width)) + geom_boxplot()
+```
+
+Note that in the above examples `median` was specified as the summary statistic of `Sepal.Width`(y) on which the order of `Species` (x) will be based. If no function is specified, the default used is `mean`.
