@@ -48,7 +48,7 @@ The `freq_out()` function returns a frequency table as a well-named `tbl_df`:
 freq_out(x)
 ```
 
-Sometimes we want to change the order of levels of a factor, for example when we want to plot data in the order of increasing or descreasing values. Let's have a look at the median of `Sepal.Width` for each `Species` in the `iris` data:
+By default, factor levels are ordered by alphabet. However, sometimes we want to order the levels in a different way, for example when we want to plot data in the order of increasing or descreasing values. Let's have a look at the median of `Sepal.Width` for each `Species` in the `iris` data:
 
 ```{r}
 library(ggplot2)
@@ -76,7 +76,6 @@ Species_reordered_desc <- reorder_desc(iris$Species, iris$Sepal.Width, median)
 ggplot(iris, aes(Species_reordered_desc, Sepal.Width)) + 
   geom_boxplot() +
   labs(x = "")
-  
 ```
 
 Note that in the above examples `median` was specified as the summary statistic of `Sepal.Width`(y) on which the order of `Species` (x) will be based. If no function is specified, the default used is `mean`.

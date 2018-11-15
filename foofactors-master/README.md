@@ -1,19 +1,21 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-**NOTE: This is a toy package created for expository purposes. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).**
+**NOTE: This package was originally developed by @jennybc. Most of the contents of this package were written by her, including the majority of this README, most of the vignette and two of the three foofactors functions. I develeoped the reorder\_desc function and contents related to this package were written by me.**
+
+\*\* OTHER NOTE: This is a toy package created for expository purposes. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).\*\*
 
 ### foofactors
 
-Factors are a very useful type of variable in R, but they can also drive you nuts. This package provides some helper functions for the care and feeding of factors.
-
-### Vignette
-
-The vignette of this package can be found [here](http://127.0.0.1:27071/session/Rvig.5f4d43c63d0c.html).
+Factors are a very useful type of variable in R, but they can also drive you nuts. This package provides some helper functions for the care and feeding of factors as well as their levels.
 
 ### Installation
 
 ``` r
-devtools::install_github("jennybc/foofactors")
+devtools::install_github("STAT545-UBC-students/hw07-fjbasedow/foofactors_master")
 ```
+
+### Vignette
+
+The vignette of this package can be found [here](http://127.0.0.1:27071/session/Rvig.5f4d43c63d0c.html).
 
 ### Quick demo
 
@@ -63,12 +65,26 @@ The `freq_out()` function returns a frequency table as a well-named `tbl_df`:
 
 ``` r
 freq_out(x)
-#> # A tibble: 5 × 2
-#>        x     n
-#>   <fctr> <int>
-#> 1      a    25
-#> 2      b    26
-#> 3      c    17
-#> 4      d    17
-#> 5      e    15
+#> # A tibble: 5 x 2
+#>   x         n
+#>   <fct> <int>
+#> 1 a        25
+#> 2 b        26
+#> 3 c        17
+#> 4 d        17
+#> 5 e        15
 ```
+
+By default, factor levels are ordered by alphabet. However, sometimes we need to reorder the levels of factors according to the values in another variable, for example when we want to plot our data in ascending or descending order. The `reorder_desc` function from `foofactors` is a new descending version of `reorder` function from `stats`. It changes the order of the levels of a factor based on the values of a second variable in descending order:
+
+``` r
+Species_reordered_desc <- reorder_desc(iris$Species, iris$Sepal.Width, median)
+
+library(ggplot2)
+#> Warning: package 'ggplot2' was built under R version 3.4.4
+ggplot(iris, aes(Species_reordered_desc, Sepal.Width)) + 
+  geom_boxplot() +
+  labs(x = "")
+```
+
+![](README-unnamed-chunk-7-1.png)
