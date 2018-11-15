@@ -10,7 +10,7 @@ ggplot(iris, aes(Species_reordered_desc, Sepal.Width)) +
   labs(x = "")
 ```
 
-![](foofactors_master/README-unnamed-chunk-7-1.png)
+[](https://raw.githubusercontent.com/STAT545-UBC-students/hw07-fjbasedow/master/foofactors-master/README-unnamed-chunk-7-1.png)
 
 The full package can be found in the [foofactors_master folder](https://github.com/STAT545-UBC-students/hw07-fjbasedow/tree/master/foofactors-master), which includes a detailed description of the package in its [README](https://github.com/STAT545-UBC-students/hw07-fjbasedow/blob/master/foofactors-master/README.md). 
 
