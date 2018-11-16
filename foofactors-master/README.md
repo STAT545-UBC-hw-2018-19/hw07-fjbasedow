@@ -15,7 +15,7 @@ devtools::install_github("STAT545-UBC-students/hw07-fjbasedow/foofactors-master"
 
 ### Vignette
 
-The vignette of this package can be found by typing `browseVignettes("foofactors")`into your console.
+The vignette of this package can be found [here](https://rpubs.com/fjbasedow/440261) or by typing `browseVignettes("foofactors")`into your console.
 
 ### Quick demo
 
