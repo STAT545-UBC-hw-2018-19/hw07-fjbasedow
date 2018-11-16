@@ -16,8 +16,11 @@ If y is a character vector, it will be sorted in reverse alphabetic order and x 
 
 \item{...}{extra arguments supplied to FUN, optional}
 }
+\value{
+A factor with the order of the levels determined by FUN applied to y grouped by x. The levels are ordered such that the values returned by FUN are in descreasing order.
+}
 \description{
-Descending version of the `reorder` function. Reorders levels of a factor based on descending order of values of a second variable.
+Descending version of the `reorder` function. Reorders levels of a factor based on descending order of values of a second variable (usually numeric).
 }
 \examples{
 x <- c("a", "d", "h", "g", "m")
