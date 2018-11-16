@@ -16,10 +16,10 @@ The full package can be found in the [foofactors_master folder](https://github.c
 
 Other files that you may be interested in:
 * [Vignette](http://127.0.0.1:18253/library/foofactors/doc/hello-foofactors.html). You can also find this by typing `browseVignettes("foofactors")` into your console.
-* [reorder_desc.R file](https://github.com/STAT545-UBC-students/hw07-fjbasedow/blob/master/foofactors-master/R/reorder_desc.R)
+* [The file describing the reorder_desc function](https://github.com/STAT545-UBC-students/hw07-fjbasedow/blob/master/foofactors-master/R/reorder_desc.R)
 * [Tests for reorder_desc](https://github.com/STAT545-UBC-students/hw07-fjbasedow/blob/master/foofactors-master/tests/testthat/test_reorder_desc.R)
 
-**NOTE: Most contents of this repo were taken from the original [foofactors repo](https://github.com/jennybc/foofactors) by Jenny Bryan. I only developed the `reorder_desc` function and created the contents related to it. **
+**NOTE: Most contents of this repo were taken from the original [foofactors repo](https://github.com/jennybc/foofactors) by Jenny Bryan. I only developed the `reorder_desc` function and created the contents related to it.**
 
 
 
