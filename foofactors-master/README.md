@@ -75,7 +75,7 @@ freq_out(x)
 #> 5 e        15
 ```
 
-By default, factor levels are ordered by alphabet. However, sometimes we need to reorder the levels of factors according to the values in another variable, for example when we want to plot our data in ascending or descending order. The `reorder_desc` function from `foofactors` is a new descending version of `reorder` function from `stats`. It changes the order of the levels of a factor based on the values of a second variable in descending order:
+By default, factor levels are ordered by alphabet. However, sometimes we need to reorder the levels of factors according to the values in another variable, for example when we want to plot our data in ascending or descending order. The `reorder_desc` function from `foofactors` is a new descending version of the `reorder` function from `stats`. It changes the order of the levels of a factor based on the values of a second variable in descending order:
 
 ``` r
 Species_reordered_desc <- reorder_desc(iris$Species, iris$Sepal.Width, median)
