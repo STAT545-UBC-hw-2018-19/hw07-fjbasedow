@@ -1,7 +1,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-**NOTE: This package was originally developed by Jenny Bryan. Most of the contents of this package were written by her, including the majority of this README, most of the vignette and two of the three foofactors functions. The original package can be found [here](https://github.com/jennybc/foofactors). I developed the reorder\_desc function and contents related to this package were written by me.**
+**NOTE: This package was originally developed by Jenny Bryan. Most of the contents of this package were written by her, including the majority of this README, most of the vignette and two of the three foofactors functions. The original package can be found [here](https://github.com/jennybc/foofactors). I developed the `reorder_desc` function and contents related to this package were written by me.**
 
-\*\* OTHER NOTE: This is a toy package created for expository purposes. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).\*\*
+**OTHER NOTE: This is a toy package created for expository purposes. It is not meant to actually be useful. If you want a package for factor handling, please see [forcats](https://cran.r-project.org/package=forcats).**
 
 ### foofactors
 
