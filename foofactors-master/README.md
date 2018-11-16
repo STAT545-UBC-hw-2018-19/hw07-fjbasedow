@@ -10,7 +10,7 @@ Factors are a very useful type of variable in R, but they can also drive you nut
 ### Installation
 
 ``` r
-devtools::install_github("STAT545-UBC-students/hw07-fjbasedow/foofactors_master")
+devtools::install_github("STAT545-UBC-students/hw07-fjbasedow/foofactors-master")
 ```
 
 ### Vignette
