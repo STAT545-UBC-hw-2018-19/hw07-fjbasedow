@@ -15,7 +15,7 @@ ggplot(iris, aes(Species_reordered_desc, Sepal.Width)) +
 The full package can be found in the [foofactors_master folder](https://github.com/STAT545-UBC-students/hw07-fjbasedow/tree/master/foofactors-master), which includes a detailed description of the package in its [README](https://github.com/STAT545-UBC-students/hw07-fjbasedow/blob/master/foofactors-master/README.md). 
 
 Other files that you may be interested in:
-* The vignette can be found by typing `browseVignettes("foofactors")` into your console.
+* [The vignette](https://rpubs.com/fjbasedow/440261). You can also find it by typing `browseVignettes("foofactors")` into your console.
 * [The file describing the reorder_desc function](https://github.com/STAT545-UBC-students/hw07-fjbasedow/blob/master/foofactors-master/R/reorder_desc.R)
 * [Tests for reorder_desc](https://github.com/STAT545-UBC-students/hw07-fjbasedow/blob/master/foofactors-master/tests/testthat/test_reorder_desc.R)
 
