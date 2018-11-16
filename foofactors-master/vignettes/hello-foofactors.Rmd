@@ -50,7 +50,7 @@ freq_out(x)
 
 By default, factor levels are ordered by alphabet. However, sometimes we want to order the levels in a different way, for example when we want to plot data in the order of increasing or descreasing values. Let's have a look at the median of `Sepal.Width` for each `Species` in the `iris` data:
 
-```{r}
+```{r, warning = FALSE}
 library(ggplot2)
 
 ggplot(iris, aes(Species, Sepal.Width)) + 
@@ -78,4 +78,4 @@ ggplot(iris, aes(Species_reordered_desc, Sepal.Width)) +
   labs(x = "")
 ```
 
-Note that in the above examples `median` was specified as the summary statistic of `Sepal.Width`(y) on which the order of `Species` (x) will be based. If no function is specified, the default used is `mean`.
+Note that in the above examples `median` was specified as the summary statistic of `Sepal.Width` on which the order of `Species` will be based. If no function is specified, the default used is `mean`.
